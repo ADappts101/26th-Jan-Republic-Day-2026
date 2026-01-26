@@ -76,16 +76,16 @@ header {
 
 /* IMAGE */
 img {
-  display: flex;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  height: 25rem;
-  max-width: 100%;
-  border: 10px groove #828282;
-  box-shadow: 0 0 500px 80px rgba(255, 255, 255, 0.3);
-  user-select: none;
-  transition: box-shadow 0.5s ease-out;
+display: flex;
+justify-self: center;
+justify-content: center;
+align-items: center;
+height: 25rem;
+max-width: 100%;
+border: 10px groove #828282;
+box-shadow: 0 0 500px 80px rgba(255, 255, 255, 0.3);
+user-select: none;
+transition: box-shadow 0.5s ease-out;
 }
 
 /* CAPTION */
