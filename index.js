@@ -64,6 +64,7 @@ window.addEventListener("load", () => {
   if (location.hash) scrollToFact(location.hash);
 });
 
+/*
 // Canvas image loader
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -85,3 +86,4 @@ netajiImg.onload = () => {
 // prevent drag / right click on canvas
 canvas.oncontextmenu = () => false;
 canvas.ondragstart = () => false;
+*/
