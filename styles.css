@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200&display=swap");
+
+:root {
+  --panel-dark: #000000;
+  --panel-light: #c8c8c8;
+  --text-main: #ffffff;
+}
+
+/* BASE */
+html,
+body {
+  margin: 0;
+  min-width: 100%;
+  scroll-behavior: smooth;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #222222 0%,
+    #444444 50%,
+    #777777 100%
+  );
+  font-family: Google Sans;
+  color: var(--text-main);
+  image-rendering: crisp;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TOP BAR */
+.headline {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  background: black;
+}
+
+/* IMAGE PANEL */
+.imageArea {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: min(32rem, 92vw);
+  background: black;
+  padding: 5rem 1rem 0;
+  border-radius: 4rem;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.36);
+  transition: box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+.imageArea:hover {
+  box-shadow: 0px 0px 200px 50px rgba(255, 255, 255, 0.6), white 0 0 50px 2px;
+  background-color: #444444;
+}
+
+.imageArea:hover canvas {
+  box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.25);
+}
+
+.imageArea:hover #timeBtn:not(:hover) {
+  background-color: white;
+}
+
+/* IMAGE */
+canvas {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  max-width: 100%;
+  border: 10px groove #828282;
+  box-shadow: 0 0 500px 80px rgba(255, 255, 255, 0.3);
+  user-select: none;
+  transition: box-shadow 0.5s ease-out;
+}
+
+/* CAPTION */
+.imgCap {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+/* TIMELINE BUTTON */
+#timeBtn {
+  color: black;
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 34rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  position: relative;
+}
+
+#timeBtn:hover {
+  background-color: rgb(65, 0, 0);
+  color: white;
+  box-shadow: 0px 20px 200px 25px rgba(255, 0, 0, 0.4), 0px 0px 50px 5px red;
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 0rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 15rem;
+  margin-top: 80vh;
+}
+
+/* FACTS */
+.fact {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(10, 10, 10, 0.35);
+  padding: 1.8rem;
+  border-radius: 1.6rem;
+  line-height: 1.6;
+  opacity: 0;
+  transition: 0.6s ease;
+  transform: none;
+  pointer-events: none;
+  cursor: none;
+  border: 2px solid rgba(0, 0, 0, 0.34);
+  scroll-margin-top: 50vh;
+}
+
+/* ACTIVE SCENE */
+.scene:target {
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.86);
+  border: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+#backB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  padding: 5rem 0 5rem 0;
+  width: fit-content;
+  z-index: 9999;
+}
+
+#backT {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(200, 200, 200, 0.2);
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 5rem;
+  transition: all 0.34s ease-in-out;
+  width: fit-content;
+}
+
+#backT:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
