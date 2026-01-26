@@ -1,0 +1,46 @@
+{
+  "name": "indian-republic-day-timeline",
+  "version": "1.0.0",
+  "private": false,
+  "description": "An interactive educational web timeline highlighting key facts about India’s Republic Day (26 January) built with HTML, CSS, and JavaScript, by Ayanshh Deb (FL3X)",
+  "keywords": [
+    "india",
+    "republic-day",
+    "timeline",
+    "education",
+    "history",
+    "html",
+    "css",
+    "javascript",
+    "static-site",
+    "github-pages"
+  ],
+  "author": {
+    "name": "Ayanshh Deb / FL3X (Chilli)",
+    "email": "kajalroychowdhury57@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "github.com/ADappts101/26th-Jan-Republic-Day-2026/",
+  "repository": {
+    "type": "git",
+    "url": "github.com/ADappts101/26th-Jan-Republic-Day-2026.git"
+  },
+  "bugs": {
+    "url": "github.com/ADappts101/26th-Jan-Republic-Day-2026/issues"
+  },
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo \"Static project — no build step required\"",
+    "deploy": "gh-pages -d .",
+    "lint": "echo \"No linter configured\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
