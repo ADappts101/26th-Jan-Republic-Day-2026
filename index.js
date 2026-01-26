@@ -69,7 +69,7 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
 const netajiImg = new Image();
-netajiImg.src = "Netaji_AYANSHHdeb.png"; // relative path on GH
+netajiImg.src = "Netaji_ArtworkByAYANSHHdeb.png"; // relative path on GH
 netajiImg.crossOrigin = "anonymous"; // just in case
 
 netajiImg.onload = () => {
