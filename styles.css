@@ -66,7 +66,7 @@ header {
   background-color: #444444;
 }
 
-.imageArea:hover canvas {
+.imageArea:hover img {
   box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.25);
 }
 
